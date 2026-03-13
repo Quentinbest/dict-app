@@ -1,0 +1,7 @@
+{
+  "name": "Eudic UI Generator",
+  "id": "eudic-ui-generator",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"]
+}

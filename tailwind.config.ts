@@ -1,0 +1,53 @@
+import type { Config } from 'tailwindcss'
+
+export default {
+  content: ['./src/renderer/src/**/*.{ts,tsx}', './src/renderer/index.html'],
+  theme: {
+    extend: {
+      colors: {
+        'bg-app':              '#2B2B2B',
+        'bg-sidebar':          '#313131',
+        'bg-sidebar-hover':    '#3C3C3C',
+        'bg-sidebar-selected': '#0E639C',
+        'bg-toolbar':          '#2B2B2B',
+        'bg-input':            '#3C3C3C',
+        'bg-tag-orange':       '#D4762C',
+        'bg-tag-level':        '#3C3C3C',
+        'bg-titlebar':         '#1E1E1E',
+        'bg-autocomplete':     '#252526',
+        'text-primary':        '#D4D4D4',
+        'text-secondary':      '#9E9E9E',
+        'text-heading':        '#E8E8E8',
+        'text-link-blue':      '#569CD6',
+        'text-orange':         '#D4762C',
+        'text-example-en':     '#CE9178',
+        'text-example-zh':     '#9E9E9E',
+        'accent-star':         '#E8A838',
+        'accent-blue':         '#0E639C',
+        'icon-default':        '#9E9E9E',
+        'icon-active':         '#569CD6',
+        'divider':             '#3C3C3C',
+        'nav-disabled':        '#4A4A4A',
+      },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'titlebar':    ['13px', { lineHeight: '20px' }],
+        'search':      ['14px', { lineHeight: '20px' }],
+        'sidebar-sm':  ['12px', { lineHeight: '16px' }],
+        'sidebar':     ['13px', { lineHeight: '18px' }],
+        'headword':    ['28px', { lineHeight: '36px' }],
+        'phonetic':    ['16px', { lineHeight: '24px' }],
+        'pos-tag':     ['11px', { lineHeight: '14px' }],
+        'def-num':     ['16px', { lineHeight: '22px' }],
+        'def-body':    ['15px', { lineHeight: '22px' }],
+        'example-en':  ['14px', { lineHeight: '20px' }],
+        'example-zh':  ['13px', { lineHeight: '19px' }],
+        'toolbar':     ['10px', { lineHeight: '14px' }],
+        'dict-hdr':    ['14px', { lineHeight: '20px' }],
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config
