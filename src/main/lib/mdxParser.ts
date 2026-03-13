@@ -40,7 +40,7 @@ function extractAttr(xml: string, attr: string): string {
   return decodeHtml(m[1].trim())
 }
 
-function decodeHtml(str: string): string {
+export function decodeHtml(str: string): string {
   return str
     .replace(/<br\s*\/?>/gi, ' ')   // <br> → space
     .replace(/<[^>]*>/g, '')         // strip remaining tags

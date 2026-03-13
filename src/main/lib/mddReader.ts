@@ -1,9 +1,10 @@
+import { MDD } from 'js-mdict'
+
 // Cache MDD instances to avoid re-parsing large files on every request
 const mddCache = new Map<string, any>()
 
 function getMddInstance(mddPath: string): any {
   if (!mddCache.has(mddPath)) {
-    const { MDD } = require('js-mdict')
     mddCache.set(mddPath, new MDD(mddPath))
   }
   return mddCache.get(mddPath)
